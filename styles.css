@@ -17,21 +17,24 @@ body {
 .background-image {
   position: absolute;
   height: 587.15px;
-  width: 100%;
+  width: 100vw;
   top: 104px;
 }
 
-header {
+.section-one {
   height: 718px;
   width: 100vw;
   background: #fff;
   border-radius: 0 0 0 75px;
 }
 
+header {
+  padding: 44px 24px 0 24px;
+}
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 58px 24px 58px 24px;
+  align-items: center;
 }
 
 .logo {
@@ -43,20 +46,25 @@ nav {
   color: #6070ff;
 }
 
-header .content {
-  margin: 58px 24px 0 24px;
+.section-one .button {
+  margin-right: 8px;
 }
 
-header h1 {
+.section-one .content {
+  padding: 0 24px 0 24px;
+}
+
+.section-one h1 {
   width: 327px;
   height: 150px;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
   color: #172b4d;
+  margin-top: 114px;
 }
 
-header p {
+.section-one p {
   width: 327px;
   height: 146px;
   font-weight: 400;
@@ -65,7 +73,7 @@ header p {
   color: #344563;
 }
 
-header h3 {
+.section-one h3 {
   width: auto;
   height: 24px;
   font-weight: 500;
