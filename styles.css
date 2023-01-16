@@ -14,14 +14,14 @@ body {
   background: #f7f7f9;
 }
 
-.background-image {
+.section-one .background-image {
   position: absolute;
   height: 587.15px;
   width: 100vw;
   top: 104px;
 }
 
-.section-one {
+.header-container {
   height: 718px;
   width: 100vw;
   background: #fff;
@@ -31,13 +31,13 @@ body {
 header {
   padding: 44px 24px 0 24px;
 }
-nav {
+header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.logo {
+header .logo {
   width: 76px;
   height: 20px;
   font-weight: 700;
@@ -46,11 +46,11 @@ nav {
   color: #6070ff;
 }
 
-.section-one .button {
+header .button {
   margin-right: 8px;
 }
 
-.section-one .content {
+.section-one .headline-container {
   padding: 0 24px 0 24px;
 }
 
@@ -82,7 +82,7 @@ nav {
   color: #7f8cff;
 }
 
-.social-icons {
+.section-one .social-icons {
   display: flex;
   justify-content: space-between;
   width: 170.17px;
