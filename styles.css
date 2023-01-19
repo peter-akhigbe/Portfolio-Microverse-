@@ -359,19 +359,37 @@ header .button {
 .section-3 .skill-list .flex-container {
   display: flex;
   justify-content: space-between;
-  padding: 24px 24px;
+  padding: 24px 0;
 }
 
 .section-3 .skill-list h3 {
   height: 24px;
-  left: 12px;
-  right: 78px;
   top: calc(50% - 24px / 2);
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   color: #000;
+}
+
+.section-3 .skill-list .language {
+  height: 320.15px;
+}
+
+.section-3 .skill-list .list {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 303px;
+  height: 66.72px;
+  background: #f7f7f9;
+  border-radius: 8px;
+  margin: 12px 0;
+  padding-left: 12px;
+}
+
+.section-3 .arrow {
+  margin-right: 50px;
 }
 
 /* Hover Effects */
