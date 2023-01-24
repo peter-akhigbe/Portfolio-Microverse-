@@ -395,6 +395,7 @@ header .button {
   font-weight: 700;
   font-size: 40px;
   height: 56px;
+  color: #fff;
 }
 
 .contact-form-section p {
@@ -404,6 +405,7 @@ header .button {
   text-align: center;
   font-family: "Poppins";
   height: 102px;
+  color: #fff;
 }
 
 /* Hover Effects */
@@ -422,3 +424,58 @@ header .button {
   background-color: #396df2;
   color: #fff;
 }
+
+/* === contact form section start === */
+.contact-form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 375px;
+  background: #6070FF;
+ 
+}
+.contact-form {
+  width: 375px;
+  height:37vh ;
+  padding-top: 50px;
+  padding-left: 10px;
+  
+  }
+  
+  .input-1, .input-2, .input-3 {
+    width: 325px;
+    margin-bottom: 25px;
+  }
+
+  #name {
+    
+    width: 325px;
+    height: 60px;
+    padding-left: 10px;
+    border: 1px solid #CFD8DC;
+border-radius: 8px;
+  }
+  #email {
+    width: 325px;
+    height: 60px;
+    padding-left: 10px;
+    border: 1px solid #CFD8DC;
+border-radius: 8px;
+  }
+  #text {
+    width: 325px;
+    padding: 15px 38px 80px 15px;
+    padding-left: 10px;
+    border: 1px solid #CFD8DC;
+border-radius: 8px;
+  }
+
+  .contact-btn {
+    width: 325px;
+    height: 50px;
+   
+border-radius: 8px;
+   cursor: pointer;
+   margin-top: 17px;
+   margin-bottom: 80px;
+  }
