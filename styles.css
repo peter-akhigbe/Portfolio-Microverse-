@@ -39,6 +39,10 @@ header .logo {
   color: #6070ff;
 }
 
+header a {
+  color: #6070ff;
+}
+
 header .button {
   margin-right: 8px;
 }
@@ -225,29 +229,17 @@ header .button {
 }
 
 .section-2 button {
-  display: flex;
   padding: 12px;
-  gap: 10px;
   width: 124px;
   height: 48px;
-  top: calc(50% - 48px / 2);
   border: 1px solid #6070ff;
   border-radius: 8px;
   background: #fff;
   transition: 1s;
-}
-
-.section-2 button div {
-  width: 100px;
-  height: 24px;
   font-weight: 500;
   font-size: 17px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
   color: #396df2;
-  white-space: nowrap;
   font-family: "poppins", sans-serif;
-  transition: 1s;
 }
 
 .section-2 img {
@@ -324,22 +316,10 @@ header .button {
   background-color: #fff;
   margin-top: 12px;
   transition: 1s;
-}
-
-.section-3 button div {
-  width: 138px;
-  height: 24px;
   font-weight: 500;
   font-size: 17px;
-  line-height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  letter-spacing: 0.03em;
   color: #396df2;
-  white-space: nowrap;
   font-family: "Poppins", sans-serif;
-  transition: 1s;
 }
 
 .section-3 .skill-list {
@@ -392,13 +372,44 @@ header .button {
   margin-right: 50px;
 }
 
+/* Contact form section */
+
+.contact-form-section {
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form-section .h1-p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: 103px;
+  margin-bottom: 87px;
+  width: 327px;
+}
+
+.contact-form-section h2 {
+  font-weight: 700;
+  font-size: 40px;
+  height: 56px;
+}
+
+.contact-form-section p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  font-family: "Poppins";
+  height: 102px;
+}
+
 /* Hover Effects */
 
 .section-2 button:hover {
   background-color: #396df2;
-}
-
-.section-2 button div:hover {
   color: #fff;
 }
 
@@ -409,8 +420,5 @@ header .button {
 
 .section-3 button:hover {
   background-color: #396df2;
-}
-
-.section-3 button div:hover {
   color: #fff;
 }
