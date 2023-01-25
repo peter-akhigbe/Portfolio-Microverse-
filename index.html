@@ -316,7 +316,13 @@
             <form action="#">
               <div class="input-1">
                 <label for="name">
-                  <input type="text" placeholder="Write your name" id="name" />
+                  <input
+                    type="text"
+                    maxlength="30"
+                    placeholder="Write your name"
+                    id="name"
+                    required
+                  />
                 </label>
               </div>
               <div class="input-2">
@@ -325,6 +331,7 @@
                     type="email"
                     placeholder="Enter your email"
                     id="email"
+                    required
                   />
                 </label>
               </div>
@@ -332,12 +339,14 @@
                 <label for="name">
                   <input
                     type="text"
+                    maxlength="500"
                     placeholder="Write your message"
                     id="text"
+                    required
                   />
                 </label>
               </div>
-              <button type="button" class="contact-btn">Get in touch</button>
+              <button type="submit" class="contact-btn">Get in touch</button>
             </form>
           </div>
         </div>
