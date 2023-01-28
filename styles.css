@@ -534,8 +534,8 @@ header ul {
 
 @media only screen and (min-width: 768px) {
   header {
-    padding: 25px 155px 0 155px;
-    height: 92px;
+    padding: 25px 10vw 0 10vw;
+    height: 72px;
   }
 
   header ul {
@@ -554,7 +554,7 @@ header ul {
   /* Desktop Section 1 */
 
   .section-1 {
-    height: 845px;
+    height: 846px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -570,13 +570,12 @@ header ul {
     width: 98vw;
     left: 34.6px;
     right: 8px;
-    height: 721px;
-    top: 119px;
+    height: 720px;
   }
 
   .section-1 .headline-container {
     width: 63.8vw;
-    height: 302px;
+    height: auto;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -607,11 +606,12 @@ header ul {
   }
 
   .section-1 h3 {
-    height: 24px;
+    height: auto;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
     color: #7f8cff;
+    margin-top: 12px;
   }
 
   /* Desktop Section 2 */
