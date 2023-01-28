@@ -534,7 +534,8 @@ header ul {
 
 @media only screen and (min-width: 768px) {
   header {
-    padding: 15px 142px 0 142px;
+    padding: 25px 155px 0 155px;
+    height: 92px;
   }
 
   header ul {
@@ -553,7 +554,10 @@ header ul {
   /* Desktop Section 1 */
 
   .section-1 {
-    height: 700px;
+    height: 845px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .section-1 .background-image {
@@ -563,28 +567,29 @@ header ul {
   .section-1 .desktop-header-bg {
     position: absolute;
     display: block;
-    width: 98%;
+    width: 98vw;
     left: 34.6px;
     right: 8px;
-    height: 70%;
+    height: 721px;
     top: 119px;
   }
 
   .section-1 .headline-container {
-    width: 50vw;
-    height: 600px;
+    width: 63.8vw;
+    height: 302px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
   }
 
   .section-1 h1 {
     width: 100%;
+    height: auto;
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
     color: #172b4d;
-    padding-top: 114px;
+    padding-top: 0;
   }
 
   .section-1 h1 .br-2 {
@@ -592,11 +597,12 @@ header ul {
   }
 
   .section-1 p {
-    width: 100%;
     height: auto;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 20px;
+    line-height: 28px;
     color: #344563;
   }
 
@@ -611,30 +617,41 @@ header ul {
   /* Desktop Section 2 */
 
   .section-2 {
-    padding: 142px;
-    display: grid;
+    padding: 142px 0;
+    display: flex;
+    flex-direction: column;
     row-gap: 142px;
+    justify-content: center;
+    align-items: center;
   }
 
   .section-2 .card {
     display: flex;
     flex-direction: row;
-    width: 1156px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 3vw;
+    width: 80vw;
     height: 496px;
-    padding: 16px;
-    gap: 46px;
     background: #fff;
     border: 1px solid #dfe1e6;
     border-radius: 24px;
+    padding: 24px 2vw;
+  }
+
+  .section-2 .flip {
+    flex-direction: row-reverse;
+    justify-content: space-between;
   }
 
   .section-2 .block {
     display: flex;
-    flex-direction: column;
-    gap: 12px;
-    width: auto;
-    height: 288px;
-    padding-right: 46px;
+    justify-content: start;
+    align-items: flex-start;
+    gap: 32px;
+    width: 36.5vw;
+    height: 98%;
+    padding-top: 48px;
   }
 
   .section-2 .frame {
@@ -647,8 +664,11 @@ header ul {
   }
 
   .section-2 .card img {
-    width: 544px;
-    height: 448px;
+    width: 36.5vw;
+    height: 98%;
+    max-width: 544px;
+    max-height: 448px;
+    border-radius: 8px;
   }
 
   .section-2 .text {
@@ -663,7 +683,7 @@ header ul {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 114px 24px;
+    padding: 142px 10vw;
     gap: 40px;
     width: 100%;
     height: auto;
@@ -676,7 +696,8 @@ header ul {
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
-    width: 447px;
+    width: 40vw;
+    max-width: 447px;
     height: 409px;
   }
 
@@ -702,7 +723,8 @@ header ul {
   }
 
   .section-3 .skill-list {
-    width: 684px;
+    width: 40vw;
+    max-width: 684px;
   }
 
   /* Desktop Section 4 */
@@ -730,5 +752,56 @@ header ul {
     position: absolute;
     width: 90vw;
     height: 718px;
+  }
+
+  .section-4 .contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 27px;
+    width: 447px;
+    margin-top: 25px;
+    padding: 0 24px 45px 24px;
+  }
+
+  .section-4 #name,
+  .section-4 #email {
+    width: inherit;
+    height: 48px;
+    padding: 15px;
+    border: 1px solid #cfd8dc;
+    border-radius: 8px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    color: #172b4d;
+  }
+
+  .section-4 #text {
+    width: inherit;
+    border: 1px solid #cfd8dc;
+    border-radius: 8px;
+    font-family: "Poppins", sans-serif;
+    color: #b3bac5;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    padding: 15px 15px 140px 15px;
+  }
+
+  .section-4 .contact-btn {
+    padding: 12px 16px;
+    width: 142px;
+    height: 48px;
+    border: 1px solid #6070ff;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: 0.3s;
+    font-weight: 500;
+    font-size: 17px;
+    color: #6070ff;
+    font-family: "Poppins", sans-serif;
+    margin-right: 0;
   }
 }
