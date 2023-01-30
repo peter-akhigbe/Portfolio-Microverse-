@@ -51,7 +51,7 @@ My Portfolio project is part of Microverse awesome curriculum.
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://github.com/peter-akhigbe/Portfolio-Microverse-/)
+- [Live Demo Link](https://peter-akhigbe.github.io/Portfolio-Microverse-/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
