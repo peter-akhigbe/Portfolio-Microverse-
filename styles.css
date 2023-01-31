@@ -36,10 +36,9 @@ header .logo {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  color: #6070ff;
 }
 
-header a {
+header .logo a {
   color: #6070ff;
 }
 
@@ -447,6 +446,10 @@ header ul {
   font-family: "poppins", sans-serif;
 }
 
+.section-4 label {
+  display: none;
+}
+
 /* Hover Effects */
 
 .section-2 button:hover {
@@ -544,6 +547,9 @@ header ul {
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
+  }
+
+  header ul a {
     color: #344563;
   }
 
