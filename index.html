@@ -9,354 +9,386 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Poppins"
     />
-    <title>Portfolio</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml, <svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22>
+        <text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>"
+    />
+    <title>Peter's Portfolio Homepage</title>
+    <meta name="description" content="Microverse Portfolio Project" />
   </head>
 
   <body>
     <header>
       <nav>
         <div class="logo"><a href="#">My Logo</a></div>
-        <img class="button" src="image/Enabled.png" alt="" />
+        <!-- add id to target button for styling -->
+        <img
+          id="menuBtn"
+          class="button"
+          src="image/Enabled.png"
+          alt="mobile navigation button"
+        />
         <ul>
-          <li>Portfolio</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
-
-    <section class="section-1">
-      <div class="headline-container">
-        <h1>
-          I’m Peter<br class="br-1" />
-          Glad to see<br class="br-2" />
-          you!
-        </h1>
-        <p>
-          I’m a software developer! I can help you build a product, feature or
-          website. Look through some of my work and experience! If you like what
-          you see and have a project you need coded, don’t hestiate to contact
-          me.
-        </p>
-        <h3>LET'S CONNECT</h3>
-
-        <ul class="social-icons">
-          <li>
-            <a href=""><img src="image/Vector(1).png" alt="" /></a>
-          </li>
-          <li>
-            <a href=""><img src="image/Vector(2).png" alt="" /></a>
-          </li>
-          <li>
-            <a href=""><img src="image/Vector(3).png" alt="" /></a>
-          </li>
-          <li>
-            <a href=""><img src="image/Vector(4).png" alt="" /></a>
-          </li>
-          <li>
-            <a href=""><img src="image/Vector(5).png" alt="" /></a>
-          </li>
-        </ul>
-      </div>
-
-      <img
-        class="background-image"
-        src="image/header-shapes-mobile.png"
-        alt=""
-      />
-
-      <img class="desktop-header-bg" src="image/Header bg.png" alt="" />
-    </section>
-
-    <section class="section-2">
-      <div class="card">
-        <img src="image/Snapshoot Portfolio.png" alt="" />
-
-        <div class="block">
-          <h3>Tonic</h3>
-          <div class="frame">
-            <p class="client">CANOPY</p>
-            <div class="counter"></div>
-            <p class="role">Back End Dev</p>
-            <div class="counter"></div>
-            <p class="year">2015</p>
-          </div>
-          <p class="text">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required.
-          </p>
+    <!-- create the overlay div and its content add id classname for styling -->
+    <div id="mobileNav">
+      <div class="container">
+        <span id="closeBtn">X</span>
+        <nav>
           <ul>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <main>
+      <section class="section-1">
+        <div class="headline-container">
+          <h1>
+            I’m Peter<br class="br-1" />
+            Glad to see<br class="br-2" />
+            you!
+          </h1>
+          <p>
+            I’m a software developer! I can help you build a product, feature or
+            website. Look through some of my work and experience! If you like
+            what you see and have a project you need coded, don’t hesitate to
+            contact me.
+          </p>
+          <h3>LET'S CONNECT</h3>
+
+          <ul class="social-icons">
             <li>
-              <p>html</p>
+              <a href=""><img src="image/Vector(1).png" alt="icon" /></a>
             </li>
             <li>
-              <p>css</p>
+              <a href=""><img src="image/Vector(2).png" alt="icon" /></a>
             </li>
             <li>
-              <p>javascript</p>
+              <a href=""><img src="image/Vector(3).png" alt="icon" /></a>
+            </li>
+            <li>
+              <a href=""><img src="image/Vector(4).png" alt="icon" /></a>
+            </li>
+            <li>
+              <a href=""><img src="image/Vector(5).png" alt="icon" /></a>
             </li>
           </ul>
-          <div class="action">
-            <button><div>See Project</div></button>
-          </div>
         </div>
-      </div>
 
-      <div class="card flip">
-        <img src="image/Snapshoot Portfolio(3).png" alt="" />
+        <img
+          class="background-image"
+          src="image/header-shapes-mobile.png"
+          alt="background image"
+        />
 
-        <div class="block">
-          <h3>Multi-Post Stories</h3>
-          <div class="frame">
-            <p class="client">FACEBOOK</p>
-            <div class="counter"></div>
-            <p class="role">Full Stack Dev</p>
-            <div class="counter"></div>
-            <p class="year">2015</p>
-          </div>
-          <p class="text">
-            Experimental content creation feature that allows users to add to an
-            existing story over the course of a day without spamming their
-            friends.
-          </p>
-          <ul>
-            <li>
-              <p>html</p>
-            </li>
-            <li>
-              <p>css</p>
-            </li>
-            <li>
-              <p>javascript</p>
-            </li>
-          </ul>
-          <div class="action">
-            <button>
-              <div>See Project</div>
-            </button>
-          </div>
-        </div>
-      </div>
+        <img
+          class="desktop-header-bg"
+          src="image/Header bg.png"
+          alt="background image"
+        />
+      </section>
 
-      <div class="card">
-        <img src="image/Snapshoot Portfolio(1).png" alt="" />
+      <section id="portfolio" class="section-2">
+        <div class="card">
+          <img src="image/Snapshoot Portfolio.png" alt="Tonic" />
 
-        <div class="block">
-          <h3>FACEBOOK 360</h3>
-          <div class="frame">
-            <p class="client">FACEBOOK</p>
-            <div class="counter"></div>
-            <p class="role">Full Stack Dev</p>
-            <div class="counter"></div>
-            <p class="year">2015</p>
-          </div>
-          <p class="text">
-            Exploring the future of media in Facebook's first Virtual Reality
-            app; a place to discover and enjoy 360 photos and videos on Gear VR.
-          </p>
-          <ul>
-            <li>
-              <p>html</p>
-            </li>
-            <li>
-              <p>css</p>
-            </li>
-            <li>
-              <p>javascript</p>
-            </li>
-          </ul>
-          <div class="action">
-            <button>
-              <div>See Project</div>
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div class="card flip">
-        <img src="image/Snapshoot Portfolio(2).png" alt="" />
-
-        <div class="block">
-          <h3>Uber Navigation</h3>
-          <div class="frame">
-            <p class="client">Uber</p>
-            <div class="counter"></div>
-            <p class="role">Lead Developer</p>
-            <div class="counter"></div>
-            <p class="year">2015</p>
-          </div>
-          <p class="text">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required.
-          </p>
-          <ul>
-            <li>
-              <p>html</p>
-            </li>
-            <li>
-              <p>css</p>
-            </li>
-            <li>
-              <p>javascript</p>
-            </li>
-          </ul>
-          <div class="action">
-            <button>
-              <div>See Project</div>
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-3">
-      <div class="top">
-        <h2>
-          About <br />
-          Myself
-        </h2>
-        <p class="para">
-          Hello I’m a software developer! I can help you build a product ,
-          feature or website Look through some of my work and experience! If you
-          like what you see and have a project you need coded, don’t hestiate to
-          contact me.
-        </p>
-        <h3>LET'S CONNECT</h3>
-        <ul class="social-icons">
-          <li>
-            <a href=""><img src="image/Vector(4).png" alt="" /></a>
-          </li>
-          <li>
-            <a href=""><img src="image/Vector(2).png" alt="" /></a>
-          </li>
-          <li>
-            <a href=""><img src="image/Vector(5).png" alt="" /></a>
-          </li>
-          <li>
-            <a href=""><img src="image/Vector(1).png" alt="" /></a>
-          </li>
-          <li>
-            <a href=""><img src="image/Vector(3).png" alt="" /></a>
-          </li>
-        </ul>
-        <button>
-          <div>Get my resume</div>
-        </button>
-      </div>
-
-      <ul class="skill-list">
-        <li class="language">
-          <div>
-            <div class="flex-container">
-              <h3>Languages</h3>
-              <img
-                class="arrow"
-                src="image/Icon - Chevron - Down - Larger.png"
-                alt=""
-              />
+          <div class="block">
+            <h3>Tonic</h3>
+            <div class="frame">
+              <p class="client">CANOPY</p>
+              <div class="counter"></div>
+              <p class="role">Back End Dev</p>
+              <div class="counter"></div>
+              <p class="year">2015</p>
             </div>
-            <div class="language-list">
-              <ul>
-                <li class="javascript list">
-                  <img src="image/javascript.png" alt="" />
-                  <div>JavaScript</div>
-                </li>
-                <li class="html list">
-                  <img src="image/html.png" alt="" />
-                  <div>HTML</div>
-                </li>
-                <li class="css list">
-                  <img src="image/css.png" alt="" />
-                  <div>CSS</div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </li>
-
-        <li>
-          <div>
-            <div class="flex-container">
-              <h3>Frameworks</h3>
-              <img
-                class="arrow"
-                src="image/Icon - Chevron - Right - Larger.png"
-                alt=""
-              />
-            </div>
-            <div class="separator"></div>
-          </div>
-        </li>
-
-        <li>
-          <div>
-            <div class="flex-container">
-              <h3>Skills</h3>
-              <img
-                class="arrow"
-                src="image/Icon - Chevron - Right - Larger.png"
-                alt=""
-              />
-            </div>
-            <div class="separator"></div>
-          </div>
-        </li>
-      </ul>
-    </section>
-
-    <section class="section-4">
-      <div class="section-4-body">
-        <div class="bg-container">
-          <img src="image/contact form shapes-mobile.png" alt="" />
-        </div>
-
-        <div class="desktop-bg">
-          <img src="image/contact form background shapes.png" alt="" />
-        </div>
-
-        <div class="container">
-          <div class="h1-p">
-            <h2>Contact me</h2>
-            <p class="p">
-              If you have an application you are interested in developing, a
-              feature that you need built or a project that needs coding. I’d
-              love to help with it
+            <p class="text">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required.
             </p>
-          </div>
-
-          <div class="contact-form">
-            <form action="https://formspree.io/f/mgebowlk" method="post">
-              <input
-                type="text"
-                name="name"
-                maxlength="30"
-                placeholder="Enter your name"
-                id="name"
-                required
-              />
-
-              <input
-                type="email"
-                name="email"
-                placeholder="Enter your email"
-                id="email"
-                required
-              />
-
-              <input
-                type="text"
-                name="message"
-                maxlength="500"
-                placeholder="Write your message"
-                id="text"
-                required
-              />
-
-              <button type="submit" class="contact-btn">Get in touch</button>
-            </form>
+            <ul>
+              <li>
+                <p>html</p>
+              </li>
+              <li>
+                <p>css</p>
+              </li>
+              <li>
+                <p>javascript</p>
+              </li>
+            </ul>
+            <div class="action">
+              <button type="button">See Project</button>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+
+        <div class="card flip">
+          <img
+            src="image/Snapshoot Portfolio(3).png"
+            alt="Multi-Post Stories"
+          />
+
+          <div class="block">
+            <h3>Multi-Post Stories</h3>
+            <div class="frame">
+              <p class="client">FACEBOOK</p>
+              <div class="counter"></div>
+              <p class="role">Full Stack Dev</p>
+              <div class="counter"></div>
+              <p class="year">2015</p>
+            </div>
+            <p class="text">
+              Experimental content creation feature that allows users to add to
+              an existing story over the course of a day without spamming their
+              friends.
+            </p>
+            <ul>
+              <li>
+                <p>html</p>
+              </li>
+              <li>
+                <p>css</p>
+              </li>
+              <li>
+                <p>javascript</p>
+              </li>
+            </ul>
+            <div class="action">
+              <button type="button">See Project</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="image/Snapshoot Portfolio(1).png" alt="FACEBOOK 360" />
+
+          <div class="block">
+            <h3>FACEBOOK 360</h3>
+            <div class="frame">
+              <p class="client">FACEBOOK</p>
+              <div class="counter"></div>
+              <p class="role">Full Stack Dev</p>
+              <div class="counter"></div>
+              <p class="year">2015</p>
+            </div>
+            <p class="text">
+              Exploring the future of media in Facebook's first Virtual Reality
+              app; a place to discover and enjoy 360 photos and videos on Gear
+              VR.
+            </p>
+            <ul>
+              <li>
+                <p>html</p>
+              </li>
+              <li>
+                <p>css</p>
+              </li>
+              <li>
+                <p>javascript</p>
+              </li>
+            </ul>
+            <div class="action">
+              <button type="button">See Project</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card flip">
+          <img src="image/Snapshoot Portfolio(2).png" alt="Uber Navigation" />
+
+          <div class="block">
+            <h3>Uber Navigation</h3>
+            <div class="frame">
+              <p class="client">Uber</p>
+              <div class="counter"></div>
+              <p class="role">Lead Developer</p>
+              <div class="counter"></div>
+              <p class="year">2015</p>
+            </div>
+            <p class="text">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required.
+            </p>
+            <ul>
+              <li>
+                <p>html</p>
+              </li>
+              <li>
+                <p>css</p>
+              </li>
+              <li>
+                <p>javascript</p>
+              </li>
+            </ul>
+            <div class="action">
+              <button type="button">See Project</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section-3">
+        <div class="top">
+          <h2>
+            About <br />
+            Myself
+          </h2>
+          <p class="para">
+            Hello I’m a software developer! I can help you build a product ,
+            feature or website Look through some of my work and experience! If
+            you like what you see and have a project you need coded, don’t
+            hesitate to contact me.
+          </p>
+          <h3>LET'S CONNECT</h3>
+          <ul class="social-icons">
+            <li>
+              <a href=""><img src="image/Vector(4).png" alt="icon" /></a>
+            </li>
+            <li>
+              <a href=""><img src="image/Vector(2).png" alt="icon" /></a>
+            </li>
+            <li>
+              <a href=""><img src="image/Vector(5).png" alt="icon" /></a>
+            </li>
+            <li>
+              <a href=""><img src="image/Vector(1).png" alt="icon" /></a>
+            </li>
+            <li>
+              <a href=""><img src="image/Vector(3).png" alt="icon" /></a>
+            </li>
+          </ul>
+          <button type="button">Get my resume</button>
+        </div>
+
+        <ul class="skill-list">
+          <li class="language">
+            <div>
+              <div class="flex-container">
+                <h3>Languages</h3>
+                <img
+                  class="arrow"
+                  src="image/Icon - Chevron - Down - Larger.png"
+                  alt=""
+                />
+              </div>
+              <div class="language-list">
+                <ul>
+                  <li class="javascript list">
+                    <img src="image/javascript.png" alt="JavaScript" />
+                    <div>JavaScript</div>
+                  </li>
+                  <li class="html list">
+                    <img src="image/html.png" alt="HTML" />
+                    <div>HTML</div>
+                  </li>
+                  <li class="css list">
+                    <img src="image/css.png" alt="CSS" />
+                    <div>CSS</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div>
+              <div class="flex-container">
+                <h3>Frameworks</h3>
+                <img
+                  class="arrow"
+                  src="image/Icon - Chevron - Right - Larger.png"
+                  alt=""
+                />
+              </div>
+              <div class="separator"></div>
+            </div>
+          </li>
+
+          <li>
+            <div>
+              <div class="flex-container">
+                <h3>Skills</h3>
+                <img
+                  class="arrow"
+                  src="image/Icon - Chevron - Right - Larger.png"
+                  alt=""
+                />
+              </div>
+              <div class="separator"></div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="contact" class="section-4">
+        <div class="section-4-body">
+          <div class="bg-container">
+            <img src="image/contact form shapes-mobile.png" alt="" />
+          </div>
+
+          <div class="desktop-bg">
+            <img src="image/contact form background shapes.png" alt="" />
+          </div>
+
+          <div class="container">
+            <div class="h1-p">
+              <h2>Contact me</h2>
+              <p class="p">
+                If you have an application you are interested in developing, a
+                feature that you need built or a project that needs coding. I’d
+                love to help with it
+              </p>
+            </div>
+
+            <div class="contact-form">
+              <form action="https://formspree.io/f/mgebowlk" method="post">
+                <label for="name">Enter your name</label>
+                <input
+                  type="text"
+                  name="name"
+                  maxlength="30"
+                  placeholder="Enter your name"
+                  id="name"
+                  required
+                />
+
+                <label for="email">Enter your email</label>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  id="email"
+                  required
+                />
+
+                <label for="message">Enter your message</label>
+                <input
+                  type="text"
+                  name="message"
+                  maxlength="500"
+                  placeholder="Write your message"
+                  id="message"
+                  required
+                />
+
+                <button type="submit" class="contact-btn">Get in touch</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="main.js"></script>
   </body>
 </html>
