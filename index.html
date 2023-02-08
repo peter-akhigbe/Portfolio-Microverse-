@@ -22,18 +22,33 @@
     <header>
       <nav>
         <div class="logo"><a href="#">My Logo</a></div>
+        <!-- add id to target button for styling -->
         <img
+          id="menuBtn"
           class="button"
           src="image/Enabled.png"
           alt="mobile navigation button"
         />
         <ul>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
+    <!-- create the overlay div and its content add id classname for stytling -->
+    <div id="mobileNav">
+      <div class="container">
+        <span id="closeBtn">X</span>
+        <nav>
+          <ul>
+            <li id="closeLink"><a href="#portfolio">Portfolio</a></li>
+            <li id="closeLink"><a href="#about">About</a></li>
+            <li id="closeLink"><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
 
     <main>
       <section class="section-1">
@@ -83,7 +98,7 @@
         />
       </section>
 
-      <section class="section-2">
+      <section id="portfolio" class="section-2">
         <div class="card">
           <img src="image/Snapshoot Portfolio.png" alt="Tonic" />
 
@@ -228,7 +243,7 @@
         </div>
       </section>
 
-      <section class="section-3">
+      <section id="about" class="section-3">
         <div class="top">
           <h2>
             About <br />
@@ -323,7 +338,7 @@
         </ul>
       </section>
 
-      <section class="section-4">
+      <section id="contact" class="section-4">
         <div class="section-4-body">
           <div class="bg-container">
             <img src="image/contact form shapes-mobile.png" alt="" />

@@ -96,7 +96,7 @@ header ul {
   font-size: 16px;
   line-height: 24px;
   color: #344563;
-  font-family: "poppins", sans-serif;
+  font-family: 'poppins', sans-serif;
 }
 
 .section-1 h3 {
@@ -207,7 +207,7 @@ header ul {
   color: #344563;
   display: flex;
   align-items: center;
-  font-family: "poppins", sans-serif;
+  font-family: 'poppins', sans-serif;
 }
 
 .section-2 ul {
@@ -250,7 +250,7 @@ header ul {
   font-weight: 500;
   font-size: 17px;
   color: #396df2;
-  font-family: "poppins", sans-serif;
+  font-family: 'poppins', sans-serif;
 }
 
 .section-2 img {
@@ -296,7 +296,7 @@ header ul {
 .section-3 .para {
   width: 327px;
   height: 144px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -332,7 +332,7 @@ header ul {
   font-weight: 500;
   font-size: 17px;
   color: #396df2;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .section-3 .skill-list {
@@ -358,7 +358,7 @@ header ul {
 .section-3 .skill-list h3 {
   height: 24px;
   top: calc(50% - 24px / 2);
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
@@ -445,7 +445,7 @@ header ul {
   line-height: 28px;
   color: #fff;
   width: inherit;
-  font-family: "poppins", sans-serif;
+  font-family: 'poppins', sans-serif;
 }
 
 .section-4 label {
@@ -476,14 +476,6 @@ header ul {
 
 /* === contact form section start by Sazzad === */
 
-/* .contact-form-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 375px;
-  background: #6070ff;
-} */
-
 .section-4 .contact-form form {
   display: flex;
   flex-direction: column;
@@ -501,7 +493,7 @@ header ul {
   padding: 15px;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 17px;
   line-height: 20px;
@@ -512,7 +504,7 @@ header ul {
   width: 327px;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #b3bac5;
   font-weight: 400;
   font-size: 17px;
@@ -531,8 +523,64 @@ header ul {
   font-weight: 500;
   font-size: 17px;
   color: #6070ff;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin-right: auto;
+}
+
+/* overlay menu styles */
+#menuBtn {
+  display: block;
+  cursor: pointer;
+}
+
+#closeBtn {
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: absolute;
+  top: 2.5rem;
+  right: 3rem;
+}
+
+#mobileNav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(96, 112, 255, 0.8);
+  backdrop-filter: blur(5px);
+  z-index: 100;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  transition: height 0.35s;
+  display: none;
+}
+
+#mobileNav .container {
+  padding: 1rem;
+}
+
+#mobileNav nav {
+  display: flex;
+  padding: 2rem;
+}
+
+#mobileNav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#mobileNav a {
+  display: block;
+  margin: 1rem;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 /* Desktop Styles */
@@ -556,6 +604,11 @@ header ul {
   }
 
   header img {
+    display: none;
+  }
+
+  #menuBtn,
+  #mobileNav {
     display: none;
   }
 
@@ -606,7 +659,7 @@ header ul {
   .section-1 p {
     height: auto;
     width: 100%;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
@@ -723,7 +776,7 @@ header ul {
   .section-3 .para {
     width: auto;
     height: auto;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -779,7 +832,7 @@ header ul {
     padding: 15px;
     border: 1px solid #cfd8dc;
     border-radius: 8px;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 17px;
     line-height: 20px;
@@ -790,7 +843,7 @@ header ul {
     width: inherit;
     border: 1px solid #cfd8dc;
     border-radius: 8px;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: #b3bac5;
     font-weight: 400;
     font-size: 17px;
@@ -809,7 +862,7 @@ header ul {
     font-weight: 500;
     font-size: 17px;
     color: #6070ff;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin-right: 0;
   }
 }
