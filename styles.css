@@ -804,7 +804,6 @@ header ul {
   }
 
   .section-4 .desktop-bg {
-    display: block;
     display: flex;
     justify-content: center;
   }
