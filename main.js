@@ -86,7 +86,7 @@ const projects = [
 for (let i = 0; i < seeProjectBtns.length; i += 1) {
   seeProjectBtns[i].addEventListener('click', () => {
     popup.style.display = 'flex';
-    popup.innerHTML = `
+    popup.innerHTML += `
     <div class="popup-child">
      <div class="popup-name-x">
      <h3 class="popup-h3">${projects[i].name}</h3>
@@ -136,11 +136,11 @@ for (let i = 0; i < seeProjectBtns.length; i += 1) {
   </div>
 </div>
     `;
+
+    const popupX = document.querySelector('.popup-x');
+
+    popupX.addEventListener('click', () => {
+      popup.style.display = 'none';
+    });
   });
 }
-
-const popupX = document.querySelector('.popup-x');
-
-popupX.addEventListener('click', () => {
-  popup.style.display = 'none';
-});
