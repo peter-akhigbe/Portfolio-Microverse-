@@ -530,6 +530,11 @@ header ul {
   margin-right: auto;
 }
 
+.formError {
+  color: red;
+  z-index: 100;
+}
+
 /* overlay menu styles */
 #menuBtn {
   display: block;

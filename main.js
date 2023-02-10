@@ -7,6 +7,9 @@ const seeProject1 = document.querySelector('.seeProject1');
 const seeProject2 = document.querySelector('.seeProject2');
 const seeProject3 = document.querySelector('.seeProject3');
 const seeProject4 = document.querySelector('.seeProject4');
+const form = document.querySelector('form');
+const email = document.querySelector('#email');
+const formError = document.querySelector('.formError');
 
 const seeProjectBtns = [seeProject1, seeProject2, seeProject3, seeProject4];
 
@@ -151,3 +154,17 @@ for (let i = 0; i < seeProjectBtns.length; i += 1) {
     });
   });
 }
+
+//  validate contact form
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  if (email.value.toLowerCase() !== email.value) {
+    formError.textContent = 'Email must be in lower case';
+    return;
+  }
+
+  formError.textContent = '';
+  form.submit();
+});
