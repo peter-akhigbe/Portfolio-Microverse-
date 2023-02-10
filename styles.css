@@ -601,7 +601,7 @@ header ul {
   border-radius: 16px;
   overflow-x: hidden;
   z-index: 10;
-  box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
 }
 
 .popup-child {
@@ -639,8 +639,8 @@ header ul {
   gap: 10px;
 }
 
-.see-live a,
-.see-source a {
+.see-live .a,
+.see-source .a {
   width: auto;
   height: 48px;
   border: 1px solid #6070ff;
@@ -951,6 +951,7 @@ header ul {
     left: calc(50% - 60vw / 2);
     top: 60px;
     border: 1px solid #ebecf0;
+
     /* justify-content: center; */
   }
 

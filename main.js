@@ -125,14 +125,14 @@ for (let i = 0; i < seeProjectBtns.length; i += 1) {
 
       <div class="popup-button-container">
         <button class="see-live" type="button">
-          <a href="${projects[i].live}"
+          <a class="a" href="${projects[i].live}"
             ><div>See Live</div>
             <img src="image/Icon.png" alt="image"
           /></a>
         </button>
 
         <button class="see-source" type="button">
-          <a href="${projects[i].source}"
+          <a class="a" href="${projects[i].source}"
             ><div>See Source</div>
             <img src="image/Vector.png" alt="image"
           /></a>
