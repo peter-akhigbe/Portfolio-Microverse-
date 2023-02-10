@@ -899,6 +899,10 @@ header ul {
     height: 718px;
   }
 
+  .section-4 .container {
+    z-index: 10;
+  }
+
   .section-4 form {
     display: flex;
     flex-direction: column;
