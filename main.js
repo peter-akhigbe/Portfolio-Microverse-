@@ -86,55 +86,62 @@ const projects = [
 for (let i = 0; i < seeProjectBtns.length; i += 1) {
   seeProjectBtns[i].addEventListener('click', () => {
     popup.style.display = 'flex';
-    popup.innerHTML += `
+    popup.innerHTML = `
     <div class="popup-child">
-     <div class="popup-name-x">
-     <h3 class="popup-h3">${projects[i].name}</h3>
-     <span class="popup-x">X</span>
-     </div>
+  <div class="popup-name-x">
+    <h3 class="popup-h3">${projects[i].name}</h3>
+    <span class="popup-x">X</span>
+  </div>
 
-     <ul class="popup-frame">
-      <li class="popup-client">${projects[i].client}</li>
-      <div class="popup-counter"></div>
-      <li class="popup-role">${projects[i].role}</li>
-      <div class="popup-counter"></div>
-      <li class="popup-year">${projects[i].year}</li>
-     </ul>
+  <ul class="popup-frame">
+    <li class="popup-client">${projects[i].client}</li>
+    <div class="popup-counter"></div>
+    <li class="popup-role">${projects[i].role}</li>
+    <div class="popup-counter"></div>
+    <li class="popup-year">${projects[i].year}</li>
+  </ul>
 
-     <img class="popup-image" src="${projects[i].image}" alt="Tonic" />
+  <img class="popup-image" src="${projects[i].image}" alt="Tonic" />
 
-     <p class="popup-para">${projects[i].para}</p>
+  <div class="popup-para-rest">
+    <div class="popup-para-container">
+      <p class="popup-para">${projects[i].para}</p>
+    </div>
 
-     <ul class="popup-ul">
-      <li class="popup-li">
-      <p class="popup-p">${projects[i].technologies[0]}</p>
-      </li>
-      <li class="popup-li">
-      <p class="popup-p">${projects[i].technologies[1]}</p>
-      </li>
-      <li class="popup-li">
-      <p class="popup-p">${projects[i].technologies[2]}</p>
-      </li>
-     </ul>
+    <div class="popup-rest-container">
+      <ul class="popup-ul">
+        <li class="popup-li">
+          <p class="popup-p">${projects[i].technologies[0]}</p>
+        </li>
+        <li class="popup-li">
+          <p class="popup-p">${projects[i].technologies[1]}</p>
+        </li>
+        <li class="popup-li">
+          <p class="popup-p">${projects[i].technologies[2]}</p>
+        </li>
+      </ul>
 
-     <div class="popup-line"></div>
+      <div class="popup-line"></div>
 
-     <div class="popup-button-container">
-     <button class="see-live" type="button">
-      <a href="${projects[i].live}"
-        ><div>See Live</div>
-        <img src="image/Icon.png" alt="image"
-      /></a>
-    </button>
+      <div class="popup-button-container">
+        <button class="see-live" type="button">
+          <a href="${projects[i].live}"
+            ><div>See Live</div>
+            <img src="image/Icon.png" alt="image"
+          /></a>
+        </button>
 
-    <button class="see-source" type="button">
-      <a href="${projects[i].source}"
-        ><div>See Source</div>
-        <img src="image/Vector.png" alt="image"
-      /></a>
-    </button>
+        <button class="see-source" type="button">
+          <a href="${projects[i].source}"
+            ><div>See Source</div>
+            <img src="image/Vector.png" alt="image"
+          /></a>
+        </button>
+      </div>
+    </div>
   </div>
 </div>
+
     `;
 
     const popupX = document.querySelector('.popup-x');
