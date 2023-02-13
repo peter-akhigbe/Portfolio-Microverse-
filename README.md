@@ -41,7 +41,8 @@ My Portfolio project is part of Microverse awesome curriculum.
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">HTML & CSS</a></li>
+    <li><a href="">HTML & CSS</a></li>
+    <li><a href="">JavaScript</a></li>
   </ul>
 </details>
 
