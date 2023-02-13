@@ -425,6 +425,7 @@ header ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 10;
 }
 
 .section-4 img {
